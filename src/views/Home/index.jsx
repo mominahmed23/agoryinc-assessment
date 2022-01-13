@@ -3,7 +3,7 @@ import { useState, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AddTodoForm from "../../components/AddTodoForm";
 import TodoItem from "../../components/TodoItem";
-import logo from "../../assets/white_logo.webp";
+import logo from "../../assets/images/white_logo.webp";
 import {
   addTodoAction,
   deleteTodoAction,

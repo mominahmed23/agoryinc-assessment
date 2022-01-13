@@ -1,0 +1,38 @@
+@import "../../sass/colors";
+
+.todo-item {
+  display: flex;
+  background-color: $dark-b;
+  width: 50%;
+  margin: 8px auto;
+  padding: 10px 10px 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    width: 85%;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 600;
+    color: $light-a;
+    flex-grow: 1;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      text-decoration: line-through;
+      transition: ease-in-out 0.5s;
+    }
+  }
+
+  .actions {
+    flex-shrink: 0;
+    button {
+      margin-left: 5px;
+    }
+  }
+}

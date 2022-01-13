@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles.scss";
 import Button from "../Button";
 import editSvg from "../../assets/icons/icons8-edit.svg";
 import deleteSvg from "../../assets/icons/icons8-delete.svg";

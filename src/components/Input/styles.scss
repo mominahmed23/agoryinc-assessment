@@ -1,0 +1,9 @@
+@import "../../sass/colors";
+
+.custom-input {
+  background-color: $dark-a;
+  padding: 15px;
+  border: 2px solid $dark-c;
+  border-radius: 4px;
+  color: $light-b;
+}

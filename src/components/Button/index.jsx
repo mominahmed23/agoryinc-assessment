@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles.scss";
 const Button = ({ variant = "primary", children, onClick, ...rest }) => {
   return (
     <button

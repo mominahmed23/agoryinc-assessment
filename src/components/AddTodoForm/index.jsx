@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles.scss";
 import { useDispatch } from "react-redux";
 import { FILTER_STATUS_MAPPING } from "../../constants";
 import { changeFilterAction } from "../../redux/actions/filterStatus";
@@ -21,7 +21,6 @@ const AddTodoForm = ({
     <form onSubmit={handleSubmit}>
       <div className="form-container">
         <Input
-          className="custom-input add-todo-input"
           placeholder="What do you need to do?"
           type="text"
           value={inputText}
