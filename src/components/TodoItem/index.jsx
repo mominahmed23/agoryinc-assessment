@@ -12,17 +12,13 @@ const TodoItem = ({ todo, handleEdit, handleDelete, mark }) => {
         {todo.completed && <img src={checkSvg} alt="check mark" />}
       </div>
       <div className="actions">
-        <Button onClick={() => handleEdit(todo)}>
+        <Button variant="icon" onClick={() => handleEdit(todo)}>
           <img src={editSvg} alt="edit" />
         </Button>
-        <Button onClick={() => handleDelete(todo)}>
+        <Button variant="icon" onClick={() => handleDelete(todo)}>
           <img src={deleteSvg} alt="delete" />
         </Button>
       </div>
-
-      {/* <Button onClick={() => mark(todo)}>
-        {todo.completed ? "Mark incomplete" : "Mark complete"}
-      </Button> */}
     </div>
   );
 };

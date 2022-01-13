@@ -90,6 +90,7 @@ const Home = () => {
               handleDelete={handleDelete}
               mark={mark}
               todo={item}
+              data-testid={`todo-task`}
             />
           ))}
         </div>

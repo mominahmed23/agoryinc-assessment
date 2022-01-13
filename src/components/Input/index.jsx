@@ -17,6 +17,7 @@ const Input = ({ type = "text", onChange, value, children, ...rest }) => {
   if (type === "select") {
     return (
       <select
+        className="custom-select"
         value={value}
         onChange={(e) => {
           if (onChange) {

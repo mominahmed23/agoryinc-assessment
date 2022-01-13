@@ -27,22 +27,19 @@ const AddTodoForm = ({
           onChange={(e) => setInputText(e.target.value)}
         />
         <div className="actions">
-          <Button
-            type="submit"
-            variant="secondary"
-            disabled={!inputText.length}
-          >
+          <Button type="submit" variant="large" disabled={!inputText.length}>
             {todoToBeEditedId ? "Update" : "Add"}
           </Button>
-
-          <Input type="select" value={filterStatus} onChange={handleFilter}>
-            {Object.keys(FILTER_STATUS_MAPPING).map((item) => (
-              <option key={item} value={Number(item)}>
-                {FILTER_STATUS_MAPPING[item]}
-              </option>
-            ))}
-          </Input>
         </div>
+      </div>
+      <div className="select-container">
+        <Input type="select" value={filterStatus} onChange={handleFilter}>
+          {Object.keys(FILTER_STATUS_MAPPING).map((item) => (
+            <option key={item} value={Number(item)}>
+              {FILTER_STATUS_MAPPING[item]}
+            </option>
+          ))}
+        </Input>
       </div>
     </form>
   );
